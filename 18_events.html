@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Events Practice</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 50px;
+      }
+
+      .container {
+        max-width: 400px;
+        margin: auto;
+        background: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      button {
+        padding: 10px 15px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        background-color: royalblue;
+        color: white;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: dodgerblue;
+      }
+
+      input[type="text"] {
+        padding: 10px;
+        width: 80%;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Event Playground</h1>
+
+      <button id="colorBtn">Change Background</button>
+
+      <form id="myForm">
+        <input type="text" id="nameInput" placeholder="Enter your name" />
+        <button type="submit">Submit</button>
+      </form>
+
+      <p id="liveOutput">You typed:</p>
+
+      <p>Press any key: <span id="keyPressed"></span></p>
+    </div>
+
+    <script src="18_events.js"></script>
+  </body>
+</html>

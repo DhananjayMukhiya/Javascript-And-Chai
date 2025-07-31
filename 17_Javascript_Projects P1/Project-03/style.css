@@ -1,0 +1,38 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f2027;  /* dark gradient */
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.clock-container {
+  text-align: center;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.clock-container h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+/* Clock Display */
+.clock {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        transition: background-color 0.5s ease;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      h1 {
+        margin-bottom: 30px;
+        color: white;
+        text-shadow: 1px 1px 3px #000;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 0 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      #start {
+        background-color: #28a745;
+        color: white;
+      }
+
+      #stop {
+        background-color: #dc3545;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1 id="myName">Click on start button.</h1>
+
+    <button id="start">Start</button>
+    <button id="stop">Stop</button> -->
+
+    <div class="container">
+      <h1>Background Color Changer</h1>
+      <div class="buttons">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

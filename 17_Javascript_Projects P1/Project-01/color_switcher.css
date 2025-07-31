@@ -1,0 +1,96 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation Styling */
+nav {
+  background-color: #222;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+nav a[aria-current="page"]::after {
+  content: " (current)";
+  font-size: 0.8rem;
+  color: #ffcc00;
+}
+
+/* Main Canvas */
+.canvas {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Heading */
+.canvas h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+/* Color Buttons */
+.button {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin: 0 10px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  border-color: #000;
+}
+
+/* Color IDs */
+#grey {
+  background-color: gray;
+}
+
+#white {
+  background-color: white;
+  border: 2px solid #000;
+}
+
+#blue {
+  background-color: #3498db;
+}
+
+#yellow {
+  background-color: #f1c40f;
+}
+
+/* Subheading */
+.canvas h2 {
+  margin-top: 2rem;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+.canvas h2 span {
+  font-weight: bold;
+  color: #333;
+}
